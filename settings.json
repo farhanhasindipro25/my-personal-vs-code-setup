@@ -157,11 +157,22 @@
     ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, $C45DFF 100%)",
     ".sidebar": "border: none !important",
     ".quick-input-widget": "transform: translateY(-50%) !important; top: 50% !important; box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45) !important; padding: 10px 10px 18px 10px !important; background-image: linear-gradient(#12172e 0%, #2a2b38 100%) !important; backdrop-filter: blur(3px) !important; border-radius: 20px !important;",
-    ".quick-input-filter .monaco-inputbox": "border-radius: 12px !important; padding: 8px !important; border: none !important; background-color: rgba(128, 0, 128, 0.4) !important; margin-bottom: 16px !important;",
-    "#command-blur": "position: absolute; width: 100%; height: 100%; background: #C45DFF; top: 0; left: 0; backdrop-filter: blur(8px);"
+    ".quick-input-filter .monaco-inputbox": "border-radius: 12px !important; padding: 8px !important; border: none !important; background-color: rgba(34, 34, 34, 0.4) !important; font-family: 'Geist Mono' !important; font-size: 14px !important; margin-bottom: 16px !important;",
+    "#command-blur": "position: absolute; width: 100%; height: 100%; background: #C45DFF; top: 0; left: 0 backdrop-filter: blur(8px);",
+    ".monaco-inputbox input::placeholder": "color: rgba(255, 255, 255, 0.3) !important;",
+    ".monaco-list-row.focused": "background-color: rgba(58, 69, 105, 0.356) !important;",
+    ".notifications-toasts .monaco-list-row:hover": "background: none !important;",
+    ".monaco-list-row:hover": "background: rgba(75, 89, 138, 0.288) !important;",
+    ".monaco-list-rows": "background: transparent !important;",
+    ".monaco-editor-hover, .monaco-hover": "box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important; padding: 10px !important; background-image: linear-gradient(#010102 0%, #0a0a0c 100%) !important; backdrop-filter: blur(3px) !important; border-radius: 20px !important; border: none !important;",
+    ".monaco-workbench .part.titlebar > .titlebar-container > .titlebar-center > .window-title > .command-center .action-item.command-center-center": "border: none !important; background: transparent !important;",
+    ".codicon-toolbar-more, .codicon-word-wrap": "display: block !important;",
+    ".composite.title": "display: flex !important; flex-direction: row !important; align-items: center !important; justify-items: center !important;"
   },
   "animations.Install-Method": "Apc Customize UI++",
-  "apc.imports": [],
+  "apc.imports": [
+    "file:///c:/Users/User/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+  ],
   "animations.CursorAnimation": true,
   "animations.Command-Palette": "Fade",
   "animations.CursorAnimationOptions": {
@@ -169,7 +180,8 @@
     "TrailLength": 1
   },
   "update.mode": "manual",
-  "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
   "tabnine.experimentalAutoImports": true,
-  "window.density.editorTabHeight": "compact"
+  "window.density.editorTabHeight": "compact",
+  "animations.Focus-Dimming-Mode": "Full Window",
+  "code-runner.runInTerminal": true
 }
